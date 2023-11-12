@@ -12,7 +12,7 @@ setup(
     classifiers=[
         'Development Status :: 1 - Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache2 License',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
     ],
