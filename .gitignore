@@ -1,0 +1,12 @@
+.vscode/
+build/
+experiments/
+sdk/
+venv/
+main.dSYM/
+.env
+*.pyc
+*.pyo
+
+.DS_Store
+
