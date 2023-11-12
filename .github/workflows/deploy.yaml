@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-            pip install -r requirements-dev.txt
+          ls -la
+          pwd
+          pip install -r requirements-dev.txt 
       - name: Linting and Testing
         run: pylint scalapb
   release:
@@ -35,6 +37,7 @@ jobs:
           tags: true
 
   pypi-publish:
+    needs: release
     if: ${{ github.ref == 'refs/heads/main' }}
     name: Upload release to PyPI
     runs-on: ubuntu-latest
